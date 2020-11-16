@@ -140,7 +140,9 @@ img {
 .right {
     right: -10px !important;
 }
-
+.about {
+    margin-bottom: 40px;
+}
 .hero__text,
 .about__text {
     padding: 80px 24px;
@@ -298,6 +300,7 @@ h3 {
 
     .about {
         grid-area: 3 / 1 / 4 / 8;
+        margin: 0;
     }
 
     .about {
