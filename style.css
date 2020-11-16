@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+* {
+    font: 62.5% 'Spartan', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-Gray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Gray: hsl(0, 0%, 27%);
+
+    --Font-size: 1.2rem;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: var(--White);
+}
+
+header {
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 72px;
+    background-color: transparent;
+    padding: 0 16px;
+    /* justify-content: space-between; */
+    z-index: 10;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    line-height: 1;
+    margin: auto;
+}
+
+.hidden__navbar {
+    display: none;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+ol {
+    display: flex;
+    margin: 0;
+    padding: o;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+ol li,
+ol li a,
+a {
+    font-size: var(--Font-size);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--Very-Dark-Gray);
+    list-style-type: none;
+    line-height: 1;
+}
+
+a {
+    display: flex;
+}
+
+ol li a {
+    margin-left: 16px;
+}
+.hero {
+    position: relative;
+    height: fit-content;
+}
+
+img {
+    width: 100% !important;
+}
+
+.hero button {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    padding: 16px 24px;
+    background: black;
+}
+
+.hero button:hover {
+    background: var(--Very-Dark-Gray);
+}
+
+.right {
+    right: 62px !important;
+}
+
+.hero__text,
+.about__text {
+    padding: 80px 24px;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+}
+
+p {
+    font-size: var(--Font-size);
+    color: var(--Dark-Gray);
+    line-height: 160%;
+    margin: 0 0 32px 0;
+}
+
+.about__text p {
+    margin: 0;
+}
+
+.external__link {
+    display: flex;
+    align-items: center;
+    font-size: var(--Font-size);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.8em;
+    width: fit-content;
+    transition: all 400ms;
+}
+
+.external__link svg {
+    margin-left: 16px;
+    transition: all 400ms;
+}
+
+.external__link:hover {
+    opacity: 0.5;
+}
+
+.external__link:hover svg {
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+}
+
+@media only screen and (min-width: 600px) {
+    nav {
+        width: fit-content !important;
+        margin-left: 56px;
+        margin-top: 24px;
+    }
+
+    .hidden__navbar {
+        display: block !important;
+    }
+
+    .hidden__navbar .navbar button,
+    nav button {
+        display: none !important;
+    }
+
+    ol li a {
+        color: var(--White);
+        font-weight: 400;
+    }
+
+    nav h1 {
+        margin: 0;
+    }
+
+    .hero img {
+        background: url(images\desktop-image-hero-1.jpg) !important;
+    }
+}
