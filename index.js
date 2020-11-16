@@ -6,10 +6,18 @@ const text = {
         `Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.`
     ]
 }
-// const img = [
-//     `images\desktop-image-hero-1.jpg`, `images\desktop-image-hero-2.jpg` , "images\desktop-image-hero-1.jpg"
-// ]
-// console.log(img);
+const img = [
+    `https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/desktop-image-hero-1.jpg`,
+    `https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/desktop-image-hero-2.jpg`,
+    `https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/desktop-image-hero-3.jpg`,
+
+
+    `https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg`,
+    `https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-2.jpg`,
+    `https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-3.jpg`
+    
+]
+console.log(img);
 const hamburger = document.getElementById('hamburger')
 const closeNavbar = document.getElementById('close')
 const navbar = document.querySelector('.hidden__navbar')
