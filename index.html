@@ -11,6 +11,7 @@
 <body>
     <div class="style__contatiner">
         <header>
+            
             <nav>
                 <button id="hamburger"><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fill-rule="evenodd" />
@@ -27,10 +28,18 @@
                                     d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z"
                                     fill="#000" fill-rule="evenodd" opacity=".201" /></svg></button>
                         <ol>
-                            <li><a href="">home</a></li>
-                            <li><a href="">shop</a></li>
-                            <li><a href="">about</a></li>
-                            <li><a href="">contact</a></li>
+                            <li><a href="">home</a>
+                                <div class="rect"></div>
+                            </li>
+                            <li><a href="">shop</a>
+                                <div class="rect"></div>
+                            </li>
+                            <li><a href="">about</a>
+                                <div class="rect"></div>
+                            </li>
+                            <li><a href="">contact</a>
+                                <div class="rect"></div>
+                            </li>
                         </ol>
                     </div>
                 </div>
@@ -39,43 +48,56 @@
         <main>
             <div class="wrapper">
                 <div class="hero">
-                    <img id="hero__image" src="https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/desktop-image-hero-1.jpg" srcset="
-                    https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/desktop-image-hero-1.jpg 1x,
-                    https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 2x,
-                    https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 2.6x,
-                    https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 3x,
-                    https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 3.5x,
-                    https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 3.6x" alt="image of a chair and table">
-                    <button id="next"><svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" /></svg></button>
-                    <button id="previous" class="right"><svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" /></svg></button>
+                    <img id="hero__image"
+                        src="https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/desktop-image-hero-1.jpg"
+                        alt="image of a chair and table">
+                        <!-- srcset="https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/desktop-image-hero-1.jpg 1x,https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 2x,https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 2.6x,https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 3x,https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 3.5x,https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg 3.6x" -->
+                    <div class="button">
+                        <button id="previous" class="right"><svg width="14" height="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
+                            </svg></button>
+                        <button id="next"><svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
+                            </svg></button>
+                    </div>
                 </div>
                 <div class="hero__text">
-                    <h2 id="hero__header">Discover innovative ways to decorate</h2>
-                    <p id="hero__text">We provide unmatched quality, comfort, and style for property owners across the country. Our
-                        experts combine form and function in bringing your vision to life. Create a room in your own
-                        style with our collection and make your property a reflection of you and what you love.</p>
-                    <a class="external__link" href="">shop now<svg width="40" height="12"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
-                                fill="#000" fill-rule="nonzero" /></svg></a>
+                    <div>
+
+                        <h2 id="hero__header">Discover innovative ways to decorate</h2>
+                        <p id="hero__text">We provide unmatched quality, comfort, and style for property owners across
+                            the country. Our
+                            experts combine form and function in bringing your vision to life. Create a room in your own
+                            style with our collection and make your property a reflection of you and what you love.</p>
+                        <a class="external__link" href="">shop now<svg width="40" height="12"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                    fill="#000" fill-rule="nonzero" /></svg></a>
+                    </div>
                 </div>
                 <div class="about">
-                    <div class="about__image">
-                        <img src="https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/image-about-dark.jpg" alt="a semi dark room with chairs, table and bed">
+                    <div class="about__image1">
+                        <img src="https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/image-about-dark.jpg"
+                            alt="a semi dark room with chairs, table and bed">
                     </div>
                     <div class="about__text">
-                        <h3>About our furniture</h3>
-                        <p>Our multifunctional collection blends design and function to suit your individual taste. Make
-                            each room unique, or pick a cohesive theme that best express your interests and what
-                            inspires you. Find the furniture pieces you need, from traditional to contemporary styles or
-                            anything in between. Product specialists are available to help you create your dream space.
-                        </p>
+                        <div>
+                            <h3>About our furniture</h3>
+                            <p>Our multifunctional collection blends design and function to suit your individual taste.
+                                Make
+                                each room unique, or pick a cohesive theme that best express your interests and what
+                                inspires you. Find the furniture pieces you need, from traditional to contemporary
+                                styles or
+                                anything in between. Product specialists are available to help you create your dream
+                                space.
+                            </p>
+                        </div>
                     </div>
                     <div class="about__image">
-                        <img src="https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/image-about-light.jpg" alt="a chair in a lighted room">
+                        <img src="https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/image-about-light.jpg"
+                            alt="a chair in a lighted room">
                     </div>
                 </div>
             </div>
