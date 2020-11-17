@@ -8,7 +8,6 @@ const img = [
     'https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/desktop-image-hero-2.jpg',
     'https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/desktop-image-hero-3.jpg'
     //,
-
     // 'https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-1.jpg',
     // 'https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-2.jpg',
     // 'https://raw.githubusercontent.com/victor-codes/room-homepage/main/images/mobile-image-hero-3.jpg'
@@ -32,7 +31,6 @@ let currentIndex = img.indexOf(heroImage)
 let length = img.length - 1
 console.log(length);
 
-console.log(currentIndex);
 
 function openNavbar() {
     hamburger.style.display = 'none'
